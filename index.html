@@ -10,5 +10,29 @@
     <div id="root"></div>
 
     <script type="module" src="/src/main.jsx"></script>
+    <!-- In your HTML or React component -->
+<script src="https://cdn.ton.org/ton-connect.js"></script>
+
+<script>
+  const tonConnect = new TonConnect();
+
+  tonConnect.on("connect", (account) => {
+    console.log("Connected: ", account);
+  });
+
+  tonConnect.on("disconnect", () => {
+    console.log("Disconnected");
+  });
+
+  // Connect button logic
+  const handleConnect = () => {
+    tonConnect.connect();
+  };
+
+  const handleDisconnect = () => {
+    tonConnect.disconnect();
+  };
+</script>
+
   </body>
 </html>
