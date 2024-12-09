@@ -11,7 +11,7 @@ const PaymentButton = () => {
 
   const handlePayment = () => {
     // Generate a payment request using Telegram Bot API
-    const telegramPaymentUrl = `https://t.me/telegramUserTest?start=pay_${TON_WALLET_ADDRESS}`;
+    const telegramPaymentUrl = `https://t.me/@AuthTester0147_bot?start=pay_${TON_WALLET_ADDRESS}`;
 
     window.open(telegramPaymentUrl, "_blank");
   };
