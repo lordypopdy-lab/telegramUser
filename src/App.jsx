@@ -27,8 +27,6 @@ const App = () => {
       {/* TonConnect Wallet Button */}
       <TonConnectButton className="tonConnect" />
 
-      <h1>Hello World</h1>
-
       <div>
         <label>Language</label>
         <select onChange={(e) => onLanguageChange(e.target.value)}>
@@ -47,6 +45,7 @@ const App = () => {
         </select>
       </div>
 
+      <h4>Connect wallet before Sending Transaction</h4>
       <button
         className="sendBtn"
         onClick={() => tonConnectUI.sendTransaction(myTransaction)}
