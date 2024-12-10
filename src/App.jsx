@@ -26,18 +26,33 @@ const App = () => {
     <div>
       {/* TonConnect Wallet Button */}
       <TonConnectButton className="tonConnect" />
-      
+
       <h1>Hello World</h1>
 
-      {/* Display the Send Transaction button only when wallet is connected */}
-      {isConnected && (
-        <button
-          className="sendBtn"
-          onClick={() => tonConnectUI.sendTransaction(myTransaction)}
-        >
-          Send Transaction
-        </button>
-      )}
+      <div>
+        <label>Language</label>
+        <select onChange={(e) => onLanguageChange(e.target.value)}>
+          <option value="en">English</option>
+          <option value="ru">Russian</option>
+          <option value="pt-BR">Portuguese (Brazil)</option>
+          <option value="es">Spanish</option>
+          <option value="de">German</option>
+          <option value="fr">French</option>
+          <option value="zh-CN">Chinese (Simplified)</option>
+          <option value="ja">Japanese</option>
+          <option value="ko">Korean</option>
+          <option value="it">Italian</option>
+          <option value="hi">Hindi</option>
+          <option value="ar">Arabic</option>
+        </select>
+      </div>
+
+      <button
+        className="sendBtn"
+        onClick={() => tonConnectUI.sendTransaction(myTransaction)}
+      >
+        Send Transaction
+      </button>
     </div>
   );
 };

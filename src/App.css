@@ -3,7 +3,7 @@ body {
 }
 
 .tonConnect {
-  width: 50%;
+  width: 100%;
   top: 50%;
   left: 50%;
   position: absolute;
@@ -18,5 +18,5 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
+
 }
