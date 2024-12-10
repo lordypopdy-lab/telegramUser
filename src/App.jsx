@@ -23,6 +23,10 @@ const App = () => {
     ],
   };
 
+  const dashboard = async () => {
+    location.href = "#";
+  }
+
   return (
     <div>
       {/* TonConnect Wallet Button */}
