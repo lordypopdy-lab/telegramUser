@@ -28,7 +28,6 @@ const App = () => {
       <TonConnectButton className="tonConnect" />
 
       <div className="language-selector">
-      <label htmlFor="language-select">Choose Language:</label>
       <select
         id="language-select"
         onChange={(e) => onLanguageChange(e.target.value)}
