@@ -65,7 +65,6 @@ const App = () => {
       <span className="back-icon">🔙</span> Back to Dashboard
     </button>
 
-      <TradingView />
     </div>
   );
 };
