@@ -57,6 +57,10 @@ const App = () => {
         Send Transaction
       </button>
 
+      <button className="back-button" onClick={dashboard}>
+      <span className="back-icon">🔙</span> Back
+    </button>
+
       <TradingView />
     </div>
   );

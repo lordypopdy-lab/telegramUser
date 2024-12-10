@@ -77,3 +77,34 @@ body {
     width: 90%;
   }
 }
+
+.back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  }
+  
+  .back-button:active {
+    background-color: #003f7f;
+    box-shadow: none;
+  }
+  
+  .back-icon {
+    font-size: 1.2rem;
+  }
+  

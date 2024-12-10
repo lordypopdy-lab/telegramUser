@@ -29,7 +29,7 @@ const TradingView = () => {
         []
       );
     return (
-        <div className="tradingview-widget-container" ref={container} style={{ height: "100%", width: "100%" }}>
+        <div className="tradingview-widget-container" ref={container} style={{ height: "100%", width: "100%", top }}>
             <div className="tradingview-widget-container__widget" style={{ height: "calc(100% - 12px)", width: "100%" }}></div>
         </div>
     )
