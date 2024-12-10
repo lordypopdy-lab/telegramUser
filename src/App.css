@@ -34,7 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 20px;
+  margin: 7px;
 }
 
 .language-selector label {
