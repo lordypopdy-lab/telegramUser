@@ -1,4 +1,5 @@
 import React from 'react'
+import "./app.css"
 import { TonConnectButton, Locales, useTonConnectUI } from "@tonconnect/ui-react"
 
 const App = () => {
@@ -24,7 +25,7 @@ const App = () => {
   return (
     <div>
       <TonConnectButton 
-      style={{float: 'right'}}
+      className='tonConnect'
       />
       <div>
         <label>language</label>
