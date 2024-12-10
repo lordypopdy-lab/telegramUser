@@ -6,18 +6,72 @@ body {
   float: right;
 }
 
-.sendBtn {
+.header{
     width: 100%;
     top: 50%;
     left: 50%;
     position: absolute;
     display: block;
     transform: translate(-50%, -50%);
-    color: white;
-    background-color: blue;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+}
 
+.sendBtn {
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  display: block;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: blue;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.language-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.language-selector label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.styled-select {
+  width: 250px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #444;
+  background-color: #f9f9f9;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.styled-select:hover {
+  background-color: #f1f1f1;
+}
+
+.styled-select:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.language-selector select option {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .styled-select {
+    width: 100%;
+  }
 }

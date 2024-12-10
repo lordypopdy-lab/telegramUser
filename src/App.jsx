@@ -27,25 +27,29 @@ const App = () => {
       {/* TonConnect Wallet Button */}
       <TonConnectButton className="tonConnect" />
 
-      <div>
-        <label>Language</label>
-        <select onChange={(e) => onLanguageChange(e.target.value)}>
-          <option value="en">English</option>
-          <option value="ru">Russian</option>
-          <option value="pt-BR">Portuguese (Brazil)</option>
-          <option value="es">Spanish</option>
-          <option value="de">German</option>
-          <option value="fr">French</option>
-          <option value="zh-CN">Chinese (Simplified)</option>
-          <option value="ja">Japanese</option>
-          <option value="ko">Korean</option>
-          <option value="it">Italian</option>
-          <option value="hi">Hindi</option>
-          <option value="ar">Arabic</option>
-        </select>
-      </div>
+      <div className="language-selector">
+      <label htmlFor="language-select">Choose Language:</label>
+      <select
+        id="language-select"
+        onChange={(e) => onLanguageChange(e.target.value)}
+        className="styled-select"
+      >
+        <option value="en">English</option>
+        <option value="ru">Russian</option>
+        <option value="pt-BR">Portuguese (Brazil)</option>
+        <option value="es">Spanish</option>
+        <option value="de">German</option>
+        <option value="fr">French</option>
+        <option value="zh-CN">Chinese (Simplified)</option>
+        <option value="ja">Japanese</option>
+        <option value="ko">Korean</option>
+        <option value="it">Italian</option>
+        <option value="hi">Hindi</option>
+        <option value="ar">Arabic</option>
+      </select>
+    </div>
 
-      <h4>Connect wallet before Sending Transaction</h4>
+      <h4 className='header'>Connect wallet before Sending Transaction</h4>
       <button
         className="sendBtn"
         onClick={() => tonConnectUI.sendTransaction(myTransaction)}
