@@ -62,7 +62,7 @@ const App = () => {
       </button>
 
       <button className="back-button" onClick={dashboard}>
-      <span className="back-icon">🔙</span> Back
+      <span className="back-icon">🔙</span> Back to Dashboard
     </button>
 
       <TradingView />

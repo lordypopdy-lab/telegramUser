@@ -80,7 +80,7 @@ body {
 
 .back-button {
     top: 70%;
-    right: 50%;
+    right: 40%;
     transform: translate(-50%, -30%);
     position: absolute;
     display: block;
