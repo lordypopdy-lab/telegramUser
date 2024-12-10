@@ -81,7 +81,7 @@ body {
 .back-button {
     top: 70%;
     right: 50%;
-    transform: translate(10%, -50%);
+    transform: translate(50%, -50%);
     position: absolute;
     display: block;
     gap: 8px;
@@ -89,7 +89,7 @@ body {
     font-size: 1rem;
     font-weight: bold;
     color: #fff;
-    font-size: 9px;
+    font-size: 12px;
     background-color: #007bff;
     border: none;
     border-radius: 8px;
