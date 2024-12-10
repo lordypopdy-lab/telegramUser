@@ -35,7 +35,7 @@ const App = () => {
         </select>
       </div>
       <h1>Hello World</h1>
-      <button onClick={() => tonConnectUI.sendTransaction(myTransaction)}>
+      <button className='sendBtn' onClick={() => tonConnectUI.sendTransaction(myTransaction)}>
         Send transaction
       </button>
     </div>
