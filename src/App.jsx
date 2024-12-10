@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import TradingView from './TradingView';
 import { TonConnectButton, useTonConnectUI } from '@tonconnect/ui-react';
 
 const App = () => {
@@ -24,7 +23,7 @@ const App = () => {
   };
 
   const dashboard = async () => {
-    location.href = "#";
+    location.href = "https://forezflash.site/deposite.php";
   }
 
   return (
