@@ -1,5 +1,5 @@
 import React from 'react'
-import "./app.css"
+import "./App.css"
 import { TonConnectButton, Locales, useTonConnectUI } from "@tonconnect/ui-react"
 
 const App = () => {
