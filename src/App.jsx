@@ -30,6 +30,9 @@ const myTransaction = {
     <div>
       <TonConnectButton >TON Connect </TonConnectButton>
       <h1>Hello World</h1>
+      <button onClick={() => tonConnectUI.sendTransaction(myTransaction)}>
+                Send transaction
+            </button>
     </div>
   )
 }
